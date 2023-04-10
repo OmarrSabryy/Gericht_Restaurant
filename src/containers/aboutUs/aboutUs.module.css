@@ -1,0 +1,150 @@
+.gericht__about {
+  min-height: 100vh;
+  position: relative;
+  color: var(--color-white);
+  font-family: var(--font-alt);
+}
+.gericht__about-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: -1;
+}
+.gericht__about-overlay img {
+  width: 400px;
+  height: 400px;
+}
+.gericht__about-aboutUs {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 1rem;
+}
+.gericht__about-aboutUs_subheader {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+.gericht__about-aboutUs_subheader h3,
+.gericht__about-history_subheader h3 {
+  font-size: 64px;
+  color: var(--color-golden);
+  font-family: var(--font-base);
+}
+.gericht__about-aboutUs_subheader img {
+  transform: rotate(180deg);
+}
+.gericht__about-aboutUs p,
+.gericht__about-history p {
+  font-size: 16px;
+  text-align: right;
+}
+.gericht__about-aboutUs button,
+.gericht__about-history button {
+  border: none;
+  outline: none;
+  background: var(--color-golden);
+  padding: 0.5rem 1rem;
+  border-radius: 2px;
+  font-family: var(--font-base);
+  cursor: pointer;
+}
+.gericht__about-history {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
+}
+.gericht__about-history_subheader {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.gericht__about-history p {
+  text-align: left;
+}
+.gericht__about-image {
+  flex: 0.3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.gericht__about-image img {
+  width: 70px;
+  height: 640px;
+}
+@media screen and (min-width: 2000px) {
+  .gericht__about-image img {
+    width: 80px;
+    height: 750px;
+  }
+  .gericht__about-overlay img {
+    width: 500px;
+    height: 550px;
+  }
+  .gericht__about-aboutUs_subheader h3,
+  .gericht__about-history_subheader h3 {
+    font-size: 100px;
+  }
+  .gericht__about-aboutUs p,
+  .gericht__about-history p {
+    font-size: 18px;
+  }
+  .gericht__about-aboutUs button,
+  .gericht__about-history button {
+    padding: 1rem 2rem;
+    border-radius: 1px;
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 1025px) {
+  .gericht__about-aboutUs_subheader h3,
+  .gericht__about-history_subheader h3 {
+    font-size: 60px;
+  }
+  .gericht__about-aboutUs p,
+  .gericht__about-history p {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 850px) {
+  .gericht__about {
+    flex-direction: column;
+  }
+  .gericht__about-aboutUs_subheader h3,
+  .gericht__about-history_subheader h3 {
+    font-size: 50px;
+  }
+  .gericht__about-aboutUs p,
+  .gericht__about-history p {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .gericht__about-aboutUs_subheader h3,
+  .gericht__about-history_subheader h3 {
+    font-size: 30px;
+  }
+  .gericht__about-aboutUs p,
+  .gericht__about-history p {
+    font-size: 10px;
+  }
+  .gericht__about-aboutUs button,
+  .gericht__about-history button {
+    padding: 0.5rem 1rem;
+    border-radius: 1px;
+    font-size: 12px;
+  }
+  .gericht__about-image img {
+    width: 60px;
+    height: 500px;
+  }
+}

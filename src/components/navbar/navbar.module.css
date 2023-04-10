@@ -1,0 +1,102 @@
+.gericht__navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 4rem;
+  align-items: center;
+  color: white;
+  font-family: var(--font-alt);
+  font-size: 14px;
+}
+.gericht__navbar-image {
+  width: 8rem;
+  height: 2rem;
+}
+.gericht__navbar-image img {
+  width: 100%;
+  height: 100%;
+}
+.gericht__navbar-navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.gericht__navbar-navigation_links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  list-style: none;
+}
+.gericht__navbar-actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  z-index: 30;
+}
+.gericht__navbar-actions_bar {
+  width: 0.6px;
+  height: 1.5rem;
+  background-color: var(--color-golden);
+}
+.gericht__navbar-actions button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: white;
+}
+.gericht__navbar-actions_dropdown svg {
+  display: none;
+  cursor: pointer;
+}
+.gericht__navbar-actions_dropdown-layout-links {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  list-style: none;
+  color: white;
+  font-family: var(--font-alt);
+  outline: none;
+}
+.gericht__navbar-actions_dropdown-layout-links button {
+  background-color: transparent;
+  border: none;
+  border-bottom: 0.5px solid var(--color-golden);
+  font-size: 14px;
+  outline: none;
+  color: white;
+}
+@media screen and (min-width: 2000px) {
+  .gericht__navbar {
+    font-size: 18px;
+  }
+  .gericht__navbar-actions button {
+    font-size: 18px;
+  }
+  .gericht__navbar-image {
+    width: 10rem;
+    height: 3rem;
+  }
+}
+@media screen and (max-width: 990px) {
+  .gericht__navbar-navigation {
+    display: none;
+  }
+  .gericht__navbar-actions_dropdown svg {
+    display: flex;
+  }
+}
+@media screen and (max-width: 650px) {
+  .gericht__navbar-actions_bar,
+  .gericht__navbar-actions button {
+    display: none;
+  }
+}
+@media screen and (min-width: 650px) {
+  .gericht__navbar-actions_dropdown-layout-links button {
+    display: none;
+  }
+}

@@ -1,0 +1,154 @@
+.gericht__gallery {
+  background: var(--color-black);
+  padding: 2rem 0 2rem 3rem;
+  color: var(--color-white);
+  font-family: var(--font-alt);
+}
+.gericht__gallery-heading {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+.gericht__gallery-heading h1 {
+  font-size: 64px;
+  color: var(--color-golden);
+  font-family: var(--font-base);
+}
+.gericht__gallery-heading p {
+  color: var(--color-grey);
+}
+.gericht__gallery-heading button {
+  border: none;
+  outline: none;
+  font-family: var(--font-base);
+  background: var(--color-golden);
+  padding: 0.5rem 1rem;
+  border-radius: 1px;
+  cursor: pointer;
+}
+.gericht__gallery-images {
+  flex: 1;
+  display: flex;
+  max-width: 50%;
+  position: relative;
+}
+.gericht__gallery-images_container {
+  display: flex;
+  width: max-content;
+  overflow-x: scroll;
+  overflow: hidden;
+  justify-content: flex-start;
+  align-items: center;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.gericht__gallery-images_container-card {
+  position: relative;
+  min-width: 300px;
+  height: 450px;
+  display: flex;
+  border: 0.1px solid var(--color-golden);
+  margin-right: 1rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.2rem;
+  overflow: hidden;
+}
+.gericht__gallery-images_container-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0.2rem;
+  transition: 0.5s ease;
+}
+.gericht__gallery-images_container-card svg {
+  position: absolute;
+  transition: 0.5s ease;
+  opacity: 0;
+  cursor: pointer;
+}
+.gericht__gallery-images_container-card:hover img {
+  opacity: 0.5;
+}
+.gericht__gallery-images_container-card:hover svg {
+  opacity: 1;
+}
+.gericht__gallery-images_controls {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+  bottom: 45%;
+}
+.gericht__gallery-images_controls svg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000;
+  cursor: pointer;
+}
+.gericht__gallery-images_controls svg:hover {
+  color: var(--color-golden);
+}
+@media screen and (min-width: 2000px) {
+  .gericht__gallery-heading h1 {
+    font-size: 100px;
+  }
+  .gericht__gallery-heading p {
+    font-size: 18px;
+  }
+  .gericht__gallery-images_container-card {
+    min-width: 350px;
+    height: 500px;
+    margin-right: 2rem;
+  }
+  .gericht__gallery-heading button {
+    padding: 1rem 2rem;
+    border-radius: 1px;
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 850px) {
+  .gericht__gallery-heading h1 {
+    font-size: 50px;
+  }
+  .gericht__gallery-heading p {
+    font-size: 14px;
+  }
+  .gericht__gallery-images_container-card {
+    min-width: 250px;
+    height: 350px;
+    margin-right: 2rem;
+  }
+}
+@media screen and (max-width: 450px) {
+  .gericht__gallery {
+    padding: 0.5rem;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .gericht__gallery-images {
+    max-width: 100%;
+  }
+  .gericht__gallery-heading h1 {
+    font-size: 25px;
+  }
+  .gericht__gallery-heading p {
+    font-size: 10px;
+  }
+  .gericht__gallery-images_container-card {
+    min-width: 250px;
+    height: 300px;
+    margin-right: 2rem;
+  }
+  .gericht__gallery-heading button {
+    padding: 0.5rem 1rem;
+    border-radius: 1px;
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,76 @@
+.gericht__footerLinks {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: var(--font-alt);
+  padding: 1rem;
+}
+.gericht__footerLinks-contactUs,
+.gericht__footerLinks-gericht,
+.gericht__footerLinks-workingHours {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+}
+.gericht__footerLinks-workingHours {
+  transform: translateY(1.3rem);
+}
+.gericht__footerLinks-contactUs h2,
+.gericht__footerLinks-workingHours h2 {
+  font-size: 32px;
+  font-family: var(--font-base);
+  color: var(--color-crimson);
+}
+.gericht__footerLinks-contactUs p,
+.gericht__footerLinks-workingHours p {
+  font-size: 16px;
+  color: var(--color-grey);
+}
+.gericht__footerLinks-gericht h1 {
+  font-size: 64px;
+  font-family: var(--font-base);
+  color: var(--color-golden);
+}
+.gericht__footerLinks-gericht p {
+  font-size: 16px;
+  color: var(--color-white);
+}
+.gericht__footerLinks-gericht_social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+.gericht__footerLinks-gericht_social {
+  cursor: pointer;
+}
+@media screen and (max-width: 850px) {
+  .gericht__footerLinks-gericht h1 {
+    font-size: 50px;
+    font-family: var(--font-base);
+    color: var(--color-golden);
+  }
+  .gericht__footerLinks-contactUs h2,
+  .gericht__footerLinks-workingHours h2 {
+    font-size: 23px;
+    font-family: var(--font-base);
+    color: var(--color-crimson);
+  }
+  .gericht__footerLinks-contactUs p,
+  .gericht__footerLinks-workingHours p,
+  .gericht__footerLinks-gericht p {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .gericht__footerLinks {
+    flex-direction: column;
+    padding: 0rem;
+    margin-bottom: 1rem;
+  }
+}

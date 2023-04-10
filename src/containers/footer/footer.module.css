@@ -1,0 +1,14 @@
+.gericht__footer {
+  min-height: 100vh;
+  flex-direction: column;
+  color: var(--color-white);
+  gap: 4rem;
+}
+.gericht__footer p {
+  color: var(--color-grey);
+}
+@media screen and (max-width: 450px) {
+  .gericht__footer p {
+    margin-bottom: 1rem;
+  }
+}

@@ -1,0 +1,116 @@
+.gericht__cta {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-white);
+  gap: 1rem;
+  font-family: var(--font-base);
+  background: var(--color-black);
+  padding: 3rem 0;
+  width: 1000px;
+  outline: none;
+  border: 0.1px solid var(--color-crimson);
+}
+.gericht__cta-subheader {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 23px;
+}
+.gericht__cta h1 {
+  font-size: 64px;
+  color: var(--color-golden);
+}
+.gericht__cta p {
+  font-size: 16px;
+  font-family: var(--font-alt);
+}
+.gericht__cta-actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.gericht__cta-actions input {
+  border: 0.1px solid var(--color-crimson);
+  outline: none;
+  padding: 0.7rem;
+  background: transparent;
+  width: 500px;
+  font-family: var(--font-base);
+  font-size: 16px;
+  color: var(--color-white);
+}
+.gericht__cta-actions button {
+  border: none;
+  outline: none;
+  background: var(--color-golden);
+  font-family: var(--font-base);
+  padding: 0.5rem 1.5rem;
+  cursor: pointer;
+}
+@media screen and (max-width: 1025px) {
+  .gericht__cta {
+    width: 800px;
+  }
+  .gericht__cta h1 {
+    font-size: 60px;
+  }
+  .gericht__cta p {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 850px) {
+  .gericht__cta {
+    width: 700px;
+  }
+  .gericht__cta h1 {
+    font-size: 50px;
+  }
+  .gericht__cta p {
+    font-size: 14px;
+  }
+  .gericht__cta-actions input {
+    width: 400px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .gericht__cta {
+    width: 400px;
+    padding: 1rem 0;
+  }
+  .gericht__cta h1 {
+    font-size: 30px;
+  }
+  .gericht__cta p {
+    font-size: 10px;
+  }
+  .gericht__cta-actions input {
+    width: 200px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .gericht__cta {
+    width: 300px;
+    padding: 1rem;
+  }
+  .gericht__cta h1 {
+    font-size: 20px;
+  }
+  .gericht__cta p {
+    font-size: 10px;
+  }
+  .gericht__cta-actions {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .gericht__cta-actions input {
+    width: auto;
+  }
+  .gericht__cta-actions button {
+    padding: 0.5rem 1rem;
+  }
+}

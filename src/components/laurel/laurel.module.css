@@ -1,0 +1,84 @@
+.gericht__laurel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.gericht__laurel-image {
+  width: 5rem;
+  height: 5rem;
+}
+.gericht__laurel-image img {
+  width: 100%;
+  height: 100%;
+}
+.gericht__laurel-heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+.gericht__laurel-heading h3 {
+  font-size: 23px;
+  color: var(--color-golden);
+  font-family: var(--font-base);
+}
+.gericht__laurel-heading p {
+  font-size: 16px;
+  color: var(--color-grey);
+}
+@media screen and (min-width: 2000px) {
+  .gericht__laurel {
+    gap: 2rem;
+  }
+  .gericht__laurel-image {
+    width: 7rem;
+    height: 7rem;
+  }
+  .gericht__laurel-heading {
+    gap: 1rem;
+  }
+  .gericht__laurel-heading h3 {
+    font-size: 27px;
+  }
+  .gericht__laurel-heading p {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 850px) {
+  .gericht__laurel {
+    gap: 0.5rem;
+  }
+  .gericht__laurel-image {
+    width: 4rem;
+    height: 4rem;
+  }
+  .gericht__laurel-heading {
+    gap: 0.5rem;
+  }
+  .gericht__laurel-heading h3 {
+    font-size: 20px;
+  }
+  .gericht__laurel-heading p {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .gericht__laurel {
+    gap: 0.2rem;
+  }
+  .gericht__laurel-image {
+    width: 3rem;
+    height: 3rem;
+  }
+  .gericht__laurel-heading {
+    gap: 0.2rem;
+  }
+  .gericht__laurel-heading h3 {
+    font-size: 16px;
+  }
+  .gericht__laurel-heading p {
+    font-size: 12px;
+  }
+}

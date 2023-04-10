@@ -1,0 +1,150 @@
+.gericht__chef {
+  min-height: 100vh;
+  color: var(--color-white);
+  font-family: var(--font-base);
+  gap: 4rem;
+}
+.gericht__chef-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.gericht__chef-image img {
+  width: 550px;
+  height: 650px;
+}
+.gericht__chef-desc {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
+}
+.gericht__chef-desc_subheader h3 {
+  font-size: 23px;
+}
+.gericht__chef-desc h1 {
+  font-size: 64px;
+  color: var(--color-golden);
+}
+.gericht__chef-desc_qoute {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.gericht__chef-desc_qoute svg {
+  display: flex;
+  transform: translateY(-3rem);
+}
+.gericht__chef-desc_qoute p,
+.gericht__chef-desc p {
+  font-size: 16px;
+  font-family: var(--font-alt);
+}
+.gericht__chef-desc h2 {
+  font-size: 32px;
+  color: var(--color-golden);
+}
+
+.gericht__chef-desc_sign {
+  width: 12rem;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+.gericht__chef-desc_sign img {
+  width: 100%;
+  height: 100%;
+}
+@media screen and (min-width: 2000px) {
+  .gericht__chef-image img {
+    width: 650px;
+    height: 750px;
+  }
+  .gericht__chef {
+    gap: 3rem;
+  }
+  .gericht__chef-desc {
+    gap: 2rem;
+  }
+  .gericht__chef-desc h1 {
+    font-size: 100px;
+  }
+  .gericht__chef-desc_qoute p,
+  .gericht__chef-desc p {
+    font-size: 18px;
+  }
+  .gericht__chef-desc h2 {
+    font-size: 40px;
+  }
+  .gericht__chef-desc_sign {
+    width: 16rem;
+    height: 8rem;
+  }
+}
+@media screen and (max-width: 1025px) {
+  .gericht__chef {
+    flex-direction: column;
+  }
+  .gericht__chef-desc h1 {
+    font-size: 60px;
+  }
+  .gericht__chef-desc_qoute p,
+  .gericht__chef-desc p {
+    font-size: 14px;
+  }
+  .gericht__chef-desc h2 {
+    font-size: 30px;
+  }
+  .gericht__chef-desc_sign {
+    width: 14rem;
+    height: 6rem;
+  }
+}
+@media screen and (max-width: 850px) {
+  .gericht__chef-image img {
+    width: 450px;
+    height: 550px;
+  }
+  .gericht__chef-desc h1 {
+    font-size: 50px;
+  }
+  .gericht__chef-desc_qoute p,
+  .gericht__chef-desc p {
+    font-size: 12px;
+  }
+  .gericht__chef-desc h2 {
+    font-size: 20px;
+  }
+  .gericht__chef-desc_sign {
+    width: 12rem;
+    height: 4rem;
+  }
+}
+@media screen and (max-width: 450px) {
+  .gericht__chef {
+    gap: 0;
+  }
+  .gericht__chef-image img {
+    width: 250px;
+    height: 320px;
+  }
+  .gericht__chef-desc h1 {
+    font-size: 30px;
+  }
+  .gericht__chef-desc_qoute p,
+  .gericht__chef-desc p {
+    font-size: 10px;
+  }
+  .gericht__chef-desc h2 {
+    font-size: 16px;
+  }
+  .gericht__chef-desc_sign {
+    width: 10rem;
+    height: 3rem;
+  }
+}

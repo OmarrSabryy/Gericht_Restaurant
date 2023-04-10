@@ -1,0 +1,115 @@
+.gericht__findUs {
+  min-height: 100vh;
+  color: var(--color-white);
+  font-family: var(--font-base);
+}
+.gericht__findUs-desc {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
+}
+.gericht__findUs-desc h1 {
+  font-size: 64px;
+  color: var(--color-golden);
+}
+.gericht__findUs-desc p {
+  font-size: 16px;
+  color: var(--color-grey);
+  font-family: var(--font-alt);
+}
+.gericht__findUs-desc_openningHours {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+}
+.gericht__findUs-desc_openningHours h2 {
+  font-size: 23px;
+  color: var(--color-golden);
+}
+.gericht__findUs-desc_openningHours p {
+  color: var(--color-white);
+}
+.gericht__findUs-desc button {
+  border: none;
+  outline: none;
+  background: var(--color-golden);
+  font-family: var(--font-base);
+  font-weight: 600;
+  padding: 0.5rem 1.5rem;
+  border-radius: 1px;
+  cursor: pointer;
+  margin-top: 2rem;
+}
+.gericht__findUs-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.gericht__findUs-image img {
+  width: 500px;
+  height: 600px;
+}
+@media screen and (min-width: 2000px) {
+  .gericht__findUs-desc h1 {
+    font-size: 100px;
+  }
+  .gericht__findUs-desc p {
+    font-size: 18px;
+  }
+  .gericht__findUs-desc_openningHours h2 {
+    font-size: 27px;
+  }
+  .gericht__findUs-image img {
+    width: 600px;
+    height: 700px;
+  }
+  .gericht__findUs-desc button {
+    padding: 1rem 2rem;
+    border-radius: 1px;
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 850px) {
+  .gericht__findUs {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .gericht__findUs-desc h1 {
+    font-size: 50px;
+  }
+  .gericht__findUs-desc p {
+    font-size: 14px;
+  }
+  .gericht__findUs-desc_openningHours h2 {
+    font-size: 20px;
+  }
+  .gericht__findUs-image img {
+    width: 400px;
+    height: 500px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .gericht__findUs {
+    flex-direction: column;
+    gap: 0rem;
+  }
+  .gericht__findUs-image img {
+    width: 250px;
+    height: 300px;
+  }
+  .gericht__findUs-desc h1 {
+    font-size: 30px;
+  }
+  .gericht__findUs-desc p {
+    font-size: 10px;
+  }
+  .gericht__findUs-desc_openningHours h2 {
+    font-size: 18px;
+  }
+}

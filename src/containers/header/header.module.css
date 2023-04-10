@@ -1,0 +1,136 @@
+.gericht__header {
+  color: var(--color-white);
+}
+.gericht__header-desc {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 3rem 1fr;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 2rem;
+  font-family: var(--font-alt);
+}
+.gericht__header-desc_links {
+  grid-column: 1;
+  display: flex;
+  justify-content: center;
+  transform-origin: bottom;
+  transform: rotate(-90deg);
+  height: 2rem;
+  gap: 1rem;
+}
+.gericht__header-desc_links p {
+  cursor: pointer;
+}
+.gericht__header-desc_heading {
+  grid-column: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 1rem;
+}
+.gericht__header-desc_heading h1 {
+  font-family: var(--font-base);
+  font-size: 90px;
+  color: var(--color-golden);
+}
+.gericht__header-desc_heading p {
+  font-size: 16px;
+}
+.gericht__header-desc_heading button {
+  border: none;
+  outline: none;
+  background: var(--color-golden);
+  padding: 0.7rem 2rem;
+  border-radius: 1px;
+  cursor: pointer;
+  font-family: var(--font-base);
+}
+.gericht__header-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.gericht__header-image img {
+  width: 600px;
+  height: 650px;
+}
+@media screen and (min-width: 2000px) {
+  .gericht__header-image img {
+    width: 700px;
+    height: 700px;
+  }
+  .gericht__header-desc_links {
+    font-size: 23px;
+  }
+  .gericht__header-desc_heading {
+    gap: 2rem;
+  }
+  .gericht__header-desc_heading h1 {
+    font-size: 100px;
+  }
+  .gericht__header-desc_heading p {
+    font-size: 18px;
+  }
+  .gericht__header-desc_heading button {
+    padding: 1rem 2rem;
+    border-radius: 1px;
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 1025px) {
+  .gericht__header {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .gericht__header-image img {
+    width: 600px;
+    height: 600px;
+  }
+  .gericht__header-desc_heading h1 {
+    font-size: 85px;
+  }
+  .gericht__header-desc_heading p {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 850px) {
+  .gericht__header-desc_heading h1 {
+    font-size: 80px;
+  }
+  .gericht__header-desc_heading p {
+    font-size: 12px;
+  }
+  .gericht__header-image img {
+    width: 500px;
+    height: 500px;
+  }
+  .gericht__header-desc_links p {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .gericht__header-desc {
+    grid-template-columns: 1rem 1fr;
+  }
+  .gericht__header-image img {
+    width: 270px;
+    height: 300px;
+  }
+  .gericht__header-desc_heading h1 {
+    font-size: 30px;
+  }
+  .gericht__header-desc_heading p {
+    font-size: 10px;
+  }
+  .gericht__header-desc_links p {
+    font-size: 10px;
+  }
+  .gericht__header-desc_heading button {
+    padding: 0.5rem 1rem;
+    border-radius: 1px;
+    font-size: 12px;
+  }
+}

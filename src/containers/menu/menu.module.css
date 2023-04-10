@@ -1,0 +1,155 @@
+.gericht__menu {
+  min-height: 100vh;
+  background: var(--color-black);
+  color: var(--color-white);
+  flex-direction: column;
+  font-family: var(--font-base);
+  gap: 1rem;
+}
+.gericht__menu-subheader {
+  font-size: 23px;
+  text-align: center;
+}
+.gericht__menu h1 {
+  font-size: 64px;
+  color: var(--color-golden);
+}
+.gericht__menu-details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 1rem;
+}
+.gericht__menu-details_wineBeer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  flex: 1;
+  width: 100%;
+}
+.gericht__menu-details_coktails {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  flex: 1;
+  width: 100%;
+}
+.gericht__menu-details_wineBeer h2,
+.gericht__menu-details_coktails h2 {
+  font-size: 45px;
+}
+.gericht__menu-details_wineBeer-items,
+.gericht__menu-details_coctails-items {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.gericht__menu-details_image {
+  flex: 0.9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.gericht__menu-details_image img {
+  height: 470px;
+  width: 300px;
+}
+.gericht__menu button {
+  border: none;
+  outline: none;
+  font-family: var(--font-base);
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  background: var(--color-golden);
+  border-radius: 0.1rem;
+  cursor: pointer;
+}
+@media screen and (min-width: 2000px) {
+  .gericht__menu {
+    gap: 2rem;
+  }
+  .gericht__menu-subheader {
+    font-size: 27px;
+  }
+  .gericht__menu h1 {
+    font-size: 100px;
+  }
+  .gericht__menu-details_wineBeer h2,
+  .gericht__menu-details_coktails h2 {
+    font-size: 50px;
+  }
+  .gericht__menu-details_image img {
+    height: 500px;
+    width: 400px;
+  }
+  .gericht__menu button {
+    padding: 1rem 2rem;
+    border-radius: 1px;
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 1025px) {
+  .gericht__menu-details {
+    flex-direction: column;
+  }
+  .gericht__menu {
+    gap: 1rem;
+  }
+  .gericht__menu h1 {
+    font-size: 60px;
+  }
+  .gericht__menu-details_wineBeer h2,
+  .gericht__menu-details_coktails h2 {
+    font-size: 40px;
+  }
+  .gericht__menu-details_image img {
+    height: 500px;
+    width: 400px;
+  }
+  .gericht__menu button {
+    padding: 0.7rem 1.5rem;
+    border-radius: 1px;
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 850px) {
+  .gericht__menu h1 {
+    font-size: 50px;
+  }
+  .gericht__menu-subheader {
+    font-size: 20px;
+  }
+  .gericht__menu-details_wineBeer h2,
+  .gericht__menu-details_coktails h2 {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .gericht__menu h1 {
+    font-size: 30px;
+  }
+  .gericht__menu-subheader {
+    font-size: 16px;
+  }
+  .gericht__menu-details_wineBeer h2,
+  .gericht__menu-details_coktails h2 {
+    font-size: 23px;
+  }
+  .gericht__menu button {
+    padding: 0.5rem 1rem;
+    border-radius: 1px;
+    font-size: 12px;
+  }
+  .gericht__menu-details_image img {
+    height: 400px;
+    width: 300px;
+  }
+}

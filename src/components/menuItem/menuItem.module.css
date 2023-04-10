@@ -1,0 +1,98 @@
+.gericht__menuItem {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  font-family: var(--font-base);
+  gap: 0.5rem;
+  width: 100%;
+}
+.gericht__menuItem-desc {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 3fr 2fr 1fr;
+  justify-content: center;
+  align-items: center;
+}
+.gericht__menuItem-desc h4 {
+  font-size: 23px;
+  color: var(--color-golden);
+  justify-self: flex-start;
+}
+.gericht__menuItem-desc h3 {
+  justify-self: flex-end;
+}
+.gericht__menuItem-desc_line {
+  width: 6rem;
+  height: 1px;
+  background: var(--color-crimson);
+  justify-self: center;
+}
+.gericht__menuItem-ingredient {
+  width: 100%;
+  align-self: flex-start;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-alt);
+  color: var(--color-gray);
+}
+.gericht__menuItem-ingredient_bar {
+  width: 1px;
+  height: 1rem;
+  background: var(--color-crimson);
+}
+@media screen and (min-width: 2000px) {
+  .gericht__menuItem {
+    gap: 1rem;
+  }
+  .gericht__menuItem-desc {
+    grid-template-columns: 1fr 1fr 0.5fr;
+  }
+  .gericht__menuItem-desc h4 {
+    font-size: 27px;
+  }
+  .gericht__menuItem-desc h3 {
+    font-size: 25px;
+  }
+  .gericht__menuItem-ingredient {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 1025px) {
+  .gericht__menuItem-desc {
+    grid-template-columns: 1fr 0.5fr 0.5fr;
+  }
+  .gericht__menuItem-desc h4 {
+    font-size: 20px;
+  }
+  .gericht__menuItem-desc h3 {
+    font-size: 18px;
+  }
+  .gericht__menuItem-ingredient {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .gericht__menuItem-desc {
+    grid-template-columns: 1fr 3rem 2rem;
+  }
+  .gericht__menuItem-desc_line {
+    width: 2.5rem;
+  }
+  .gericht__menuItem-desc h4 {
+    font-size: 14px;
+  }
+  .gericht__menuItem-desc h3 {
+    font-size: 12px;
+  }
+  .gericht__menuItem-ingredient {
+    font-size: 10px;
+  }
+  .gericht__menuItem-ingredient_bar {
+    width: 1px;
+    height: 0.5rem;
+    background: var(--color-crimson);
+  }
+}
